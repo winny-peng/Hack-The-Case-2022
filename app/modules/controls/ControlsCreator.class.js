@@ -1,15 +1,6 @@
-/* Fitting Room - controls creator
-
-Author: Winny Peng
-Date: April 23 2022
-
-Code modified from https://github.com/tudorfis/1000-projects.git
-
-*/
-
-import avatarConfig from '/fittingroom/config/avatar-config.js'
-import ControlsRenderer from './renderer.js'
-import ControlsCss from './class.js'
+import avatarConfig from '/app/config/avatar.config.js'
+import ControlsRenderer from './ControlsRenderer.class.js'
+import ControlsCss from './ControlsCss.class.js'
 
 export default class ControlsCreator {
     constructor() {

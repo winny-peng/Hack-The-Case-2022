@@ -1,11 +1,3 @@
-/* Fitting Room - controls renderer
-
-Author: Winny Peng
-Date: April 23 2022
-
-Code modified from https://github.com/tudorfis/1000-projects.git
-
-*/
 
 export default class ControlsRenderer {
     constructor( controlConfig ) {

@@ -1,10 +1,9 @@
-/* Fitting Room - avatar skin (colour))
+/* Fitting Room - avatar skin (colour)
 
 Author: Winny Peng
 Date: April 23 2022
 
 Code modified from https://github.com/tudorfis/1000-projects.git
-
 */
 
 export default {
@@ -19,12 +18,12 @@ export default {
         'js_foot'
     ],
     selectorClass: 'js_skin_color',
-    defaultOption: 'african',
+    defaultOption: 'caucazian',
     options: {
         'caucazian':  { 'background': 'rgb(255, 236, 239)' },
         'fresh-tan':  { 'background': '#ffbaba' },
         'indian':     { 'background': '#976243' },
-        'african':    { 'background': 'rgb(64 51 48)' },
-        'alien':      { 'background': 'rgb(163 243 157)' },
+        'african':    { 'background': 'rgb(64, 51, 48)' },
+        'alien':      { 'background': 'rgb(163, 243, 157)' },
     }
 }

@@ -1,11 +1,3 @@
-/* Fitting Room - avatar hair (colour)
-
-Author: Winny Peng
-Date: April 23 2022
-
-Code modified from https://github.com/tudorfis/1000-projects.git
-
-*/
 
 export default {
     labelTitle: 'Hair Color',
