@@ -1,10 +1,3 @@
-/* Fitting Room - avatar skin (colour)
-
-Author: Winny Peng
-Date: April 23 2022
-
-Code modified from https://github.com/tudorfis/1000-projects.git
-*/
 
 export default {
     labelTitle: 'Skin',
@@ -18,12 +11,11 @@ export default {
         'js_foot'
     ],
     selectorClass: 'js_skin_color',
-    defaultOption: 'caucazian',
+    defaultOption: '1',
     options: {
-        'caucazian':  { 'background': 'rgb(255, 236, 239)' },
-        'fresh-tan':  { 'background': '#ffbaba' },
-        'indian':     { 'background': '#976243' },
-        'african':    { 'background': 'rgb(64, 51, 48)' },
-        'alien':      { 'background': 'rgb(163, 243, 157)' },
+        '1':  { 'background': 'rgb(255, 236, 239)' },
+        '2':  { 'background': '#ffbaba' },
+        '3':     { 'background': '#976243' },
+        '4':    { 'background': 'rgb(64, 51, 48)' },
     }
 }

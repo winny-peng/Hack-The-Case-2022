@@ -1,8 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
+.virtual_fitting_room {
+	box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,9 +9,9 @@ body {
     overflow: hidden;
 }
 
-.main {
+.js_main {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 80vw;
     height: 90vh;
