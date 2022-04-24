@@ -1,3 +1,5 @@
+/* === VIRTUAL FITTING ROOM === */
+
 .virtual_fitting_room {
 	box-sizing: border-box;
     display: flex;
@@ -96,3 +98,5 @@
 .hair {
     background: green;
 }
+
+/* === GLOBAL NAVIGATION BAR === */
