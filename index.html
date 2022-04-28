@@ -55,7 +55,7 @@
 		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		<span>Cart</span>
 		<!-- My Tree -->
-		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#point_display">
+		<button type="button" id="btn_tree_display" class="btn" data-toggle="modal" data-target="#point_display">
 			<i class="fa fa-tree" aria-hidden="true"></i>
 		</button>
 		<!-- Modal -->
@@ -152,10 +152,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$1.00</p>
-					<!-- Button trigger modal -->
 					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-					<!-- Toast -->
-					<div id="snackbar">You purchased a product worth $1.00 and earned 100 tree points. Wow look at your tree grow!</div>
 				</div>
 			</div>
 		</div>
@@ -164,7 +161,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$5.00</p>
-					<a href="#" class="btn btn-primary">Buy Now</a> </div>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -172,7 +170,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$10.00</p>
-					<a href="#" class="btn btn-primary">Buy Now</a> </div>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -182,7 +181,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$7.00</p>
-					<a href="#" class="btn btn-primary">Buy Now</a> </div>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -190,7 +190,8 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$3.00</p>
-					<a href="#" class="btn btn-primary">Buy Now</a> </div>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -198,10 +199,13 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$9.00</p>
-					<a href="#" class="btn btn-primary">Buy Now</a> </div>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+				</div>
 			</div>
 		</div>
 	</div>
+	<!-- Toast -->
+	<div id="purchase_toast">You purchased a product worth $1.00 and earned 100 tree points. Wow look at your tree grow!</div>
 </div>
 <hr>
 <footer class="text-center">

@@ -36,7 +36,7 @@ function point_add() {
 }	
 
 function purchase() {
-  var x = document.getElementById("snackbar");
+  var x = document.getElementById("purchase_toast");
   x.className = "show";
   setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
