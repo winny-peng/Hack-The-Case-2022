@@ -55,6 +55,29 @@
 		</div>
 		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
 		<span>Cart</span>
+		<!-- My Tree -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#point_display">
+			<i class="fa fa-tree" aria-hidden="true"></i>
+		</button>
+		<!-- Modal -->
+		<div class="modal fade" id="point_display" tabindex="-1" role="dialog" aria-labelledby="point_display" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="point_display">My Pet Tree</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				   <img id='img' src="images/tree-1.jpg">
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
 	</div>
 </nav>
 <div class="container mt-3">
@@ -130,13 +153,13 @@
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">$1.00</p>
 					<!-- Button trigger modal -->
-					<button type="button" class="btn btn-primary" onclick="point_add(100)" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
 					<!-- Modal -->
 					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 					  <div class="modal-dialog" role="document">
 						<div class="modal-content">
 						  <div class="modal-header">
-							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							<h5 class="modal-title" id="exampleModalLabel">Purchase Complete!</h5>
 							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							  <span aria-hidden="true">&times;</span>
 							</button>
@@ -146,7 +169,7 @@
 						  </div>
 						  <div class="modal-footer">
 							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							<input type="button" onclick="location.href='tree.html';" value="Look Tree" />
+							<!-- <input type="button" onclick="location.href='tree.html';" value="Look Tree" /> -->
 						  </div>
 						</div>
 					  </div>
@@ -199,117 +222,6 @@
 	</div>
 </div>
 <hr>
-<h2 class="text-center">FEATURED PRODUCTS</h2>
-<hr>
-<div class="container">
-	<div class="row">
-		<div class="col-lg-4">
-			<ul class="list-unstyled">
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media my-4"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-			</ul>
-		</div>
-		<div class="col-lg-4">
-			<ul class="list-unstyled">
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media my-4"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-			</ul>
-		</div>
-		<div class="col-lg-4">
-			<ul class="list-unstyled">
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media my-4"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-				<li class="media"> <img class="mr-3" src="images/100X125.gif" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">List-based media object</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus. </div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-<hr>
-<div class="container text-white bg-dark p-4">
-	<div class="row">
-		<div class="col-6 col-md-8 col-lg-7">
-			<div class="row text-center">
-				<div class="col-sm-6 col-md-4 col-lg-4 col-12">
-					<ul class="list-unstyled">
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-4 col-12">
-					<ul class="list-unstyled">
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-					</ul>
-				</div>
-				<div class="col-sm-6 col-md-4 col-lg-4 col-12">
-					<ul class="list-unstyled">
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-						<li class="btn-link"> <a>Link anchor</a> </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 col-lg-5 col-6">
-			<address>
-			<strong>MyStoreFront, Inc.</strong><br>
-			Indian Treasure Link<br>
-			Quitman, WA, 99110-0219<br>
-			<abbr title="Phone">P:</abbr> (123) 456-7890
-			</address>
-			<address>
-			<strong>Full Name</strong><br>
-			<a href="mailto:#">first.last@example.com</a>
-			</address>
-		</div>
-	</div>
-</div>
 <footer class="text-center">
 	<div class="container">
 		<div class="row">
