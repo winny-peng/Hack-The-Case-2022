@@ -129,7 +129,29 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+						<div class="modal-content">
+						  <div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+						  </div>
+						  <div class="modal-body">
+							  You purchased a product worth $X.00 and earned X amount of points.
+						  </div>
+						  <div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							<input type="button" onclick="location.href='tree.html';" value="Look Tree" />
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -137,7 +159,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<a href="#" class="btn btn-primary">Buy Now</a> </div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -145,7 +167,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<a href="#" class="btn btn-primary">Buy Now</a> </div>
 			</div>
 		</div>
 	</div>
@@ -155,7 +177,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<a href="#" class="btn btn-primary">Buy Now</a> </div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -163,7 +185,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<a href="#" class="btn btn-primary">Buy Now</a> </div>
 			</div>
 		</div>
 		<div class="col-md-4 pb-1 pb-md-0">
@@ -171,7 +193,7 @@
 				<div class="card-body">
 					<h5 class="card-title">Card title</h5>
 					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Add to Cart</a> </div>
+					<a href="#" class="btn btn-primary">Buy Now</a> </div>
 			</div>
 		</div>
 	</div>
@@ -302,5 +324,7 @@
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/popper.min.js"></script> 
 <script src="js/bootstrap-4.4.1.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/custom.js"></script>
 </body>
 </html>
