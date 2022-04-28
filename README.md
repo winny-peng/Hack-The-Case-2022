@@ -1,6 +1,6 @@
 # Hack-The-Case-2022: Amazon Prime: Eco Initiative
 
-Simple overview of use/purpose.
+Unlike most businesses, Amazon saw its sales and operations soar during the pandemic because of the world's reliance on quick, efficient, and easy online shopping. Amazon recorded a profit of over 200% in 2021 with statistics pointing to even greater growth in coming years. So how can Amazon find lateral opportunities to best invest its funds for long term profit?
 
 ## Description
 
