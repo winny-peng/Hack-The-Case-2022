@@ -18,7 +18,7 @@ function point_add() {
 	else if (point_count == 200) {
 		tree_state = 3;
 	} 
-	else if (point_count == 200) {
+	else if (point_count == 300) {
 		tree_state = 4;
 	} 
 	else {
