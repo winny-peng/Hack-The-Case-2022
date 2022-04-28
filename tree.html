@@ -9,21 +9,52 @@
 <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
 <!-- Load custom css -->
 <link href="css/custom.css" rel="stylesheet">
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<div class="container"> <a class="navbar-brand" href="#">Navbar</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
-				<li class="nav-item"> <a class="nav-link" href="#">My Tree</a> </li>
-			</ul>
-			<form class="form-inline my-2 my-lg-0">
-				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-			</form>
+<nav class="navbar navbar-expand-lg navbar-bg-colour">
+	<div class="container d-flex justify-content-between"> <a class="navbar-brand" href="index.html"> <img id="navbar-logo" src="images/amazon_logo.svg" alt="Site Logo."> </a> <i class="fa fa-map-marker" aria-hidden="true"></i>
+		<div>
+			<p>Deliver to John Doe</p>
+			<span>Toronto A1B 2C3</span>
 		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_department" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+			<div class="dropdown-menu" aria-labelledby="dropdown_nav_department">
+				<a class="dropdown-item" href="#">Department #1</a>
+				<a class="dropdown-item" href="#">Department #2</a>
+				<a class="dropdown-item" href="#">Department #3</a>
+			</div>
+		</div>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa fa-search" style="color:#000000" aria-hidden="true"></i></button>
+		</form>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flag" style="color:#ffffff" aria-hidden="true"></i></button>
+			<div class="dropdown-menu" aria-labelledby="dropdown_nav_language">
+				<a class="dropdown-item" href="#">English</a>
+				<a class="dropdown-item" href="#">French</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<p>Hello, John</p>
+				<span>Accounts &amp; Lists</span>
+			</button>
+			<div class="dropdown-menu" aria-labelledby="dropdown_nav_account">
+				<a class="dropdown-item" href="tree.html">My Tree</a>
+				<a class="dropdown-item" href="#">Wishlist</a>
+				<a class="dropdown-item" href="#">Order History</a>
+			</div>
+		</div>
+		<div>
+			<p>Returns</p>
+			<span>&amp; Orders</span>
+		</div>
+		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		<span>Cart</span>
 	</div>
 </nav>
 	

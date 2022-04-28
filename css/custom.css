@@ -3,3 +3,16 @@
 #tree {
 	width: 100%;
 }
+
+/* NAVIGATION */
+.navbar p, .navbar span, .navbar i {
+	color: #ffffff;
+	margin: 0;
+}
+.navbar-bg-colour {
+	background-color: #232f3e;
+}
+#navbar-logo {
+	width: 100px;
+}
+
