@@ -60,23 +60,19 @@
 		</button>
 		<!-- Modal -->
 		<div class="modal fade" id="point_display" tabindex="-1" role="dialog" aria-labelledby="point_display" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="point_display">My Pet Tree</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
-				</button>
-			  </div>
-			  <div class="modal-body">
-				   <img id="tree" src="images/tree-1.jpg" alt="My Pet Tree">
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary" onclick="point_add()">Add Points</button>
-			  </div>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="point_display">My Pet Tree</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+					</div>
+					<div class="modal-body"> <img id="tree" src="images/tree-1.jpg" alt="My Pet Tree"> </div>
+					<div class="d-flex justify-content-between modal-footer">
+						<div id="point_display_value">Eco Points: 0</div>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
 			</div>
-		  </div>
 		</div>
 	</div>
 </nav>

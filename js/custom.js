@@ -31,7 +31,9 @@ function point_add() {
 	}
 	
 	var src = 'images/tree-' + tree_state + '.jpg';
+	var point_total = 'Eco Points: ' + point_count;
 	document.getElementById('tree').src=src;
+	document.getElementById('point_display_value').innerHTML=point_total;
 	purchase();
 }	
 
