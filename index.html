@@ -13,212 +13,206 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-bg-colour">
-	<div class="container d-flex justify-content-between"> <a class="navbar-brand" href="index.html"> <img id="navbar-logo" src="images/amazon_logo.svg" alt="Site Logo."> </a> <i class="fa fa-map-marker" aria-hidden="true"></i>
-		<div>
-			<p>Deliver to John Doe</p>
-			<span>Toronto A1B 2C3</span>
-		</div>
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_department" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
-			<div class="dropdown-menu" aria-labelledby="dropdown_nav_department">
-				<a class="dropdown-item" href="#">Department #1</a>
-				<a class="dropdown-item" href="#">Department #2</a>
-				<a class="dropdown-item" href="#">Department #3</a>
+	<nav class="navbar navbar-expand-lg navbar-bg-colour">
+		<div class="container d-flex justify-content-between"> <a class="navbar-brand" href="index.html"> <img id="navbar-logo" src="images/amazon_logo.svg" alt="Site Logo."> </a> <i class="fa fa-map-marker" aria-hidden="true"></i>
+			<div>
+				<p>Deliver to John Doe</p>
+				<span>Toronto A1B 2C3</span>
 			</div>
-		</div>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa fa-search" style="color:#000000" aria-hidden="true"></i></button>
-		</form>
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flag" style="color:#ffffff" aria-hidden="true"></i></button>
-			<div class="dropdown-menu" aria-labelledby="dropdown_nav_language">
-				<a class="dropdown-item" href="#">English</a>
-				<a class="dropdown-item" href="#">French</a>
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_department" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All</button>
+				<div class="dropdown-menu" aria-labelledby="dropdown_nav_department">
+					<a class="dropdown-item" href="#">Department #1</a>
+					<a class="dropdown-item" href="#">Department #2</a>
+					<a class="dropdown-item" href="#">Department #3</a>
+				</div>
 			</div>
-		</div>
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<p>Hello, John</p>
-				<span>Accounts &amp; Lists</span>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-warning my-2 my-sm-0" type="submit"><i class="fa fa-search" style="color:#000000" aria-hidden="true"></i></button>
+			</form>
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_language" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-flag" style="color:#ffffff" aria-hidden="true"></i></button>
+				<div class="dropdown-menu" aria-labelledby="dropdown_nav_language">
+					<a class="dropdown-item" href="#">English</a>
+					<a class="dropdown-item" href="#">French</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown_nav_account" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<p>Hello, John</p>
+					<span>Accounts &amp; Lists</span>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdown_nav_account">
+					<a class="dropdown-item" href="#">Wishlist</a>
+					<a class="dropdown-item" href="#">Order History</a>
+				</div>
+			</div>
+			<div>
+				<p>Returns</p>
+				<span>&amp; Orders</span>
+			</div>
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			<span>Cart</span>
+			<!-- My Tree -->
+			<button type="button" id="btn_tree_display" class="btn" data-toggle="modal" data-target="#point_display">
+				<i class="fa fa-tree" aria-hidden="true"></i>
 			</button>
-			<div class="dropdown-menu" aria-labelledby="dropdown_nav_account">
-				<a class="dropdown-item" href="#">Wishlist</a>
-				<a class="dropdown-item" href="#">Order History</a>
-			</div>
-		</div>
-		<div>
-			<p>Returns</p>
-			<span>&amp; Orders</span>
-		</div>
-		<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-		<span>Cart</span>
-		<!-- My Tree -->
-		<button type="button" id="btn_tree_display" class="btn" data-toggle="modal" data-target="#point_display">
-			<i class="fa fa-tree" aria-hidden="true"></i>
-		</button>
-		<!-- Modal -->
-		<div class="modal fade" id="point_display" tabindex="-1" role="dialog" aria-labelledby="point_display" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="point_display">My Pet Tree</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-					</div>
-					<div class="modal-body"> <img id="tree" src="images/tree-1.jpg" alt="My Pet Tree"> </div>
-					<div class="d-flex justify-content-between modal-footer">
-						<div id="point_display_value">Eco Points: 0</div>
-						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<!-- Modal -->
+			<div class="modal fade" id="point_display" tabindex="-1" role="dialog" aria-labelledby="point_display" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="point_display">My Pet Tree</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+						</div>
+						<div class="modal-body"> <img id="tree" src="images/tree-1.jpg" alt="My Pet Tree"> </div>
+						<div class="d-flex justify-content-between modal-footer">
+							<div id="point_display_value">Eco Points: 0</div>
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</nav>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-12">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleControls" data-slide-to="1"></li>
+						<li data-target="#carouselExampleControls" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active"> <img class="d-block w-100" src="images/1920x500.gif" alt="First slide">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Item 1 Heading</h5>
+								<p>Item 1 Description</p>
+							</div>
+						</div>
+						<div class="carousel-item"> <img class="d-block w-100" src="images/1920x500.gif" alt="Second slide">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Item 2 Heading</h5>
+								<p>Item 2 Description</p>
+							</div>
+						</div>
+						<div class="carousel-item"> <img class="d-block w-100" src="images/1920x500.gif" alt="Third slide">
+							<div class="carousel-caption d-none d-md-block">
+								<h5>Item 3 Heading</h5>
+								<p>Item 3 Description</p>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+			</div>
+		</div>
+		<hr>
 	</div>
-</nav>
-<div class="container mt-3">
-	<div class="row">
-		<div class="col-12">
-			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleControls" data-slide-to="1"></li>
-					<li data-target="#carouselExampleControls" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active"> <img class="d-block w-100" src="images/1920x500.gif" alt="First slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Item 1 Heading</h5>
-							<p>Item 1 Description</p>
-						</div>
-					</div>
-					<div class="carousel-item"> <img class="d-block w-100" src="images/1920x500.gif" alt="Second slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Item 2 Heading</h5>
-							<p>Item 2 Description</p>
-						</div>
-					</div>
-					<div class="carousel-item"> <img class="d-block w-100" src="images/1920x500.gif" alt="Third slide">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Item 3 Heading</h5>
-							<p>Item 3 Description</p>
-						</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>Free Shipping</h4>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>Free Returns</h4>
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				<div class="row">
+					<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
+					<div class="col-lg-6 col-10 ml-1">
+						<h4>Low Prices</h4>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<hr>
-</div>
-<div class="container">
-	<div class="row">
-		<div class="col-4">
-			<div class="row">
-				<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-				<div class="col-lg-6 col-10 ml-1">
-					<h4>Free Shipping</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col-4">
-			<div class="row">
-				<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-				<div class="col-lg-6 col-10 ml-1">
-					<h4>Free Returns</h4>
-				</div>
-			</div>
-		</div>
-		<div class="col-4">
-			<div class="row">
-				<div class="col-2"><img class="rounded-circle" alt="Free Shipping" src="images/40X40.gif"></div>
-				<div class="col-lg-6 col-10 ml-1">
-					<h4>Low Prices</h4>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<hr>
-<h2 class="text-center">RECOMMENDED PRODUCTS</h2>
-<hr>
-<div class="container">
-	<div class="row text-center">
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$1.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$5.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$10.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row text-center mt-4">
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$7.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$3.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 pb-1 pb-md-0">
-			<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">$9.00</p>
-					<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Toast -->
-	<div id="purchase_toast">You purchased a product worth $1.00 and earned 100 tree points. Wow look at your tree grow!</div>
-</div>
-<hr>
-<footer class="text-center">
+	<h2 class="text-center">RECOMMENDED PRODUCTS</h2>
+	<hr>
 	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">$1.00</p>
+						<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">$5.00</p>
+						<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 pb-1 pb-md-0">
+				<div class="card"> <img class="card-img-top" src="images/400X200.gif" alt="Card image cap">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">$10.00</p>
+						<button type="button" class="btn btn-primary" onclick="point_add()" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Toast -->
+		<div id="purchase_toast">You purchased a product worth $1.00 and earned 100 tree points. Wow look at your tree grow!</div>
+	</div>
+	<hr>
+	<h2 class="text-center">REDEEM ECO POINTS</h2>
+	<hr>
+	<hr>
+	<div class="container mt-3">
 		<div class="row">
-			<div class="col-12">
-				<p>Copyright © MyWebsite. All rights reserved.</p>
+			<div class="col-12 text-center">
+				<h3>How to use your ECO points</h3>
+				<p>Earn ECO points by purchasing sustainable products or by participating in our ECO Recycling program. Each ECO point you earn directly helps save our planet! In return, here are some badass savings as thanks omg pls reword.</p>
+				<p>100 points = $1.00</p>
+				<hr>
+				<div class="row">
+					<div class="col-6">
+						<i class="fa fa-tree" aria-hidden="true"></i>
+						<p># of trees planted goes here</p>
+					</div>
+					<div class="col-6">
+						<i class="fa fa-usd" aria-hidden="true"></i>
+						<p>cashback value goes here</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-</footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-<script src="js/jquery-3.4.1.min.js"></script> 
-<!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script src="js/popper.min.js"></script> 
-<script src="js/bootstrap-4.4.1.js"></script>
-<!-- Custom JavaScript -->
-<script src="js/custom.js"></script>
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<p>Copyright © MyWebsite. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script> 
+	<!-- Include all compiled plugins (below), or include individual files as needed --> 
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="js/custom.js"></script>
 </body>
 </html>
