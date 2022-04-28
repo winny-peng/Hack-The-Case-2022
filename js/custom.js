@@ -32,4 +32,11 @@ function point_add() {
 	
 	var src = 'images/tree-' + tree_state + '.jpg';
 	document.getElementById('tree').src=src;
+	purchase();
 }	
+
+function purchase() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
