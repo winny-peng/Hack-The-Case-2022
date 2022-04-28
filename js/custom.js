@@ -3,26 +3,29 @@
 // === GLOBAL VARIABLES ===
 var point_count = 0;
 
-const tree_image = document.getElementById("tree");
-tree_image.src = "images/tree-1.jpg";
-
 function point_add() {
+	// variables
+	var tree_state = 1;
+	
 	//increment points
 	point_count += 100;
 	
 	if (point_count == 0) {
-		tree_image.src = "images/tree-1.jpg";
+		tree_state = 1;
 	} 
 	else if (point_count == 100) {
-		tree_image.src = "images/tree-2.jpg";
+		tree_state = 2;
 	} 
 	else if (point_count == 200) {
-		tree_image.src = "images/tree-3.jpg";
+		tree_state = 3;
 	} 
-	else if (point_count == 300) {
-		tree_image.src = "images/tree-4.jpg";
+	else if (point_count == 200) {
+		tree_state = 4;
 	} 
 	else {
-		tree_image.src = "images/tree-5.jpg";
+		tree_state = 5;
 	}
+	
+	var src = 'images/tree-' + tree_state + '.jpg';
+	document.getElementById('tree').src=src;
 }	
