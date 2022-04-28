@@ -8,7 +8,7 @@ An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
 
-Quick explanation on how to view/run static website.
+Consult our presentation slides for more information: https://docs.google.com/presentation/d/1Q03J8mDiX1RHu9ot6Yvw_Bk11vTAIR-h9BHiyaERSXM/edit?usp=sharing
 
 ## Help
 
