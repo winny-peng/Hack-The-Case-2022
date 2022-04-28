@@ -1,4 +1,9 @@
 /* CSS Document */
+/*
+#93c47dff this is the light green
+#70ad47ff this is the dark green
+#ff9900 this is yellow
+*/
 
 #tree {
 	width: 100%;
@@ -16,7 +21,7 @@
 	width: 100px;
 }
 #btn_tree_display {
-	background-color: #3bb300;
+	background-color: #70ad47ff;
 }
 
 #purchase_toast {
@@ -39,7 +44,7 @@
 	visibility: visible;
 	-webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
 	animation: fadein 0.5s, fadeout 0.5s 2.5s;
-	background-color: #3bb300;
+	background-color: #70ad47ff;
 }
 
 @-webkit-keyframes fadein {
