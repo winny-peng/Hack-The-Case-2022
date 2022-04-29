@@ -3,6 +3,7 @@
 #93c47dff this is the light green
 #70ad47ff this is the dark green
 #ff9900 this is yellow
+#00674b - Dark Green
 */
 
 #tree {
@@ -67,3 +68,12 @@
   to {bottom: 0; opacity: 0;}
 }
 
+/* === AMAZON ECHO PROGRAM EXPLANATION === */
+#points_stats_display i {
+	font-size: 72px;
+	color: #00674b;
+}
+#points_stats_trees {
+	font-size: 100px;
+	color: #00674b;
+}
