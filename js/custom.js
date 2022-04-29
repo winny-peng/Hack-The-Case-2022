@@ -4,15 +4,16 @@
 var point_count = 0;
 var trees_planted = 0;
 
-function point_add() {
+function point_add(point_amount) {
 	// variables
 	var tree_state = 1;
 
 	//increment points
-	point_count += 100;
+	point_count += point_amount;
 
 	if (point_count % 1000 == 0) {
-			trees_planted += 1;
+		trees_planted += 1;
+		plant_tree();
 	}
 	else if ((point_count % 1000) < 200) {
 		tree_state = 1;
@@ -74,11 +75,13 @@ const tree_marker = L.divIcon({
     className: 'tree_icon'
 });
 
-L.marker([44.728, -110.588],{ icon: tree_marker}).addTo(map)
-		    .bindPopup('Tree Test 1')
-
-L.marker([44.228, -110.588],{ icon: tree_marker}).addTo(map)
-				.bindPopup('Tree Test 2')
-
-L.marker([40.428, -120.588],{ icon: tree_marker}).addTo(map)
-		    .bindPopup('Tree Test 3')
+// plant tree
+function plant_tree() {
+	// (Math.random() * (max - min + 1) + min).toFixed(3); --> min/max variables if changing area
+	
+	var longitude = (Math.random() * (1) + 44).toFixed(3);
+	var latitude = (Math.random() * (1) + (-111)).toFixed(3);
+	
+	L.marker([longitude, latitude],{ icon: tree_marker}).addTo(map)
+		    .bindPopup('Tree Test' + trees_planted);
+}
