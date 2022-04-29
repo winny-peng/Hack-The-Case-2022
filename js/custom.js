@@ -1,38 +1,37 @@
 // JavaScript Document
 
 // === GLOBAL VARIABLES ===
-var point_count = 1100;
-var trees_planted = 1;
+var point_count = 0; 
+var trees_planted = 0; 
 
 function point_add() {
 	// variables
-	var tree_state = 1;
+	var tree_state = 1; 
 	
 	//increment points
 	point_count += 100;
 	
-	if (((point_count/trees_planted)-800) <= 200) {
+	if (point_count % 1000 == 0) {
+			trees_planted += 1;
+	}
+	else if ((point_count % 1000) < 200) {
 		tree_state = 1;
 	} 
-	else if (((point_count/trees_planted)-800) <= 400) {
+	else if ((point_count % 1000) < 400) {
 		tree_state = 2;
 	} 
-	else if (((point_count/trees_planted)-800) <= 600) {
+	else if ((point_count % 1000) < 600) {
 		tree_state = 3;
 	} 
-	else if (((point_count/trees_planted)-800) <= 800) {
+	else if ((point_count % 1000) < 800) {
 		tree_state = 4;
 	} 
-	else if (((point_count/trees_planted)-800) < 1000) {
+	else if ((point_count % 1000) < 1000) {
 		tree_state = 5;
-	}
-	else {
-		tree_state = 1;
-		trees_planted += 1;
 	}
 	
 	var src = 'images/tree-' + tree_state + '.jpg';
-	var point_total = 'Eco Points: ' + point_count;
+	var point_total = 'Leaves: ' + point_count;
 	
 	// update numbers
 	document.getElementById('tree').src=src;
