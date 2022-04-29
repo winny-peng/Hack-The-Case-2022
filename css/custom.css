@@ -105,8 +105,11 @@ p {
 	color: #ffffff;
 }
 
-/* === AMAZON LEAF PROGRAM EXPLANATION === */
-#points_stats_display i {
+/* === AMAZON GREEN PROGRAM EXPLANATION === */
+#points_stats_display {
+	padding: 20px 0;
+}
+#points_stats_display i, #points_display_impact i {
 	font-size: 72px;
 	color: #70ad47;
 }
