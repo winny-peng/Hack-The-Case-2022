@@ -63,13 +63,15 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 const tree_marker = L.divIcon({
     html: '<i class="fa fa-tree"></i>',
-    iconSize: [50, 100],
+		shadowUrl: 'leaflet/images/marker-shadow.png',
     className: 'tree_icon'
 });
 
-L.marker([42.428, -110.548]).addTo(map)
-    .bindPopup('Our first tree!')
-    .openPopup();
+L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+		    .bindPopup('Tree Test 1')
 
-L.marker([44.428, -110.588],{ icon:  tree_marker}).addTo(map)
-		    .bindPopup('Yellowstone Park')
+L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+				.bindPopup('Tree Test 2')
+
+L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+		    .bindPopup('Tree Test 3')
