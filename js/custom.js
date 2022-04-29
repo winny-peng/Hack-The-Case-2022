@@ -61,6 +61,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+//radius of yellowstone park range
 var circle = L.circle([44.428, -110.588], {
 	color: '#70ad47',
 	fillColor: '#93c47d',
@@ -68,6 +69,7 @@ var circle = L.circle([44.428, -110.588], {
 	radius: 70000
 }).addTo(map);
 
+//create custom tree markers
 const tree_marker = L.divIcon({
     html: '<i class="fa fa-tree"></i>',
 		shadowUrl: 'leaflet/images/marker-shadow.png',
