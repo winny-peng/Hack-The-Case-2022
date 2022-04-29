@@ -1,10 +1,11 @@
 /* CSS Document */
 /*
-#93c47dff this is the light green
-#70ad47ff this is the dark green
-#ff9900 this is yellow
-#00674b - Dark Green
-#70ad47 - Medium Green
+#93c47d Light green
+#70ad47 Medium green
+#ff9900 Yellow
+#00674b Dark Green
+#232f3 Amazon Navy
+#131921 Almost Black
 */
 
 /* === GENERAL STYLING === */
@@ -58,7 +59,7 @@
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: 0; opacity: 0;} 
+  from {bottom: 0; opacity: 0;}
   to {bottom: 30px; opacity: 1;}
 }
 
@@ -68,7 +69,7 @@
 }
 
 @-webkit-keyframes fadeout {
-  from {bottom: 30px; opacity: 1;} 
+  from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
 
