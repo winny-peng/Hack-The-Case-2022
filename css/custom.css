@@ -114,3 +114,8 @@
 .carousel-indicators {
 	height: 15px;
 }
+
+/* === GOD DAMN MAP API === */
+#map {
+	height: 180px;
+}
