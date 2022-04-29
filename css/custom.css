@@ -139,3 +139,7 @@ p {
 	font-size: 30px;
 	color: #00674b;
 }
+
+.card-img-top {
+	height: 200px;
+}
