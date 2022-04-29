@@ -11,6 +11,12 @@
 <link href="css/custom.css" rel="stylesheet">
 <!-- Load icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Leaflet Map API -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+<!--Custom Fonts (Google Font API) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Fira+Sans">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-bg-colour">
@@ -146,6 +152,18 @@
 		sustainability goals for Amazon. Each purchase brings you closer to planting one tree on Earth and earns you Leaves to spend
 		on Amazon promotions and rewards.</h3>
 	<hr>
+	<div class="container mr-35">
+		<div class="row text-center mt-3">
+			<div class="col-3">
+				<h3> OUR IMPACT </h3>
+        <p>Together, Amazon Leaf (lol) has planted over 2,000 trees around the world.
+          Help us continue our journey towards a greener future by participating.
+			</div>
+			<div class="col mr-3 mb-5" id="map-border">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row text-center">
 			<div class="col-md-4 pb-1 pb-md-0">
@@ -228,7 +246,12 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap-4.4.1.js"></script>
+	<!-- Leaflet Map JS -->
+	<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		 integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		 crossorigin=""></script>
 	<!-- Custom JavaScript -->
 	<script src="js/custom.js"></script>
+
 </body>
 </html>
