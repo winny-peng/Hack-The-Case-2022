@@ -82,6 +82,7 @@
 			</div>
 		</div>
 	</nav>
+	<!-- carousel -->
 	<div class="container mt-3">
 		<div class="row">
 			<div class="col-12">
@@ -118,6 +119,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- amazon leaf & recommend products -->
 	<div class="container">
 		<div class="row text-center mt-3">
 			<div class="col-12">
@@ -129,12 +131,13 @@
 			</div>
 		</div>
 	</div>
+	<!-- products -->
 	<div class="container">
 		<div class="row text-center">
 			<div class="col-md-4 pb-1 pb-md-0">
 				<div class="card"> <img class="card-img-top" src="images/product-1.jpg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Card title<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
+						<h5 class="card-title">bamboo comb set<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
 						<p class="card-text">$1.00</p>
 						<button type="button" class="btn btn-purchase" onclick="point_add(100)" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
 					</div>
@@ -143,7 +146,7 @@
 			<div class="col-md-4 pb-1 pb-md-0">
 				<div class="card"> <img class="card-img-top" src="images/product-2.jpg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Card title<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
+						<h5 class="card-title">re-claimed plastic bottle<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
 						<p class="card-text">$5.00</p>
 						<button type="button" class="btn btn-purchase" onclick="point_add(500)" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
 					</div>
@@ -152,7 +155,7 @@
 			<div class="col-md-4 pb-1 pb-md-0">
 				<div class="card"> <img class="card-img-top" src="images/product-3.jpg" alt="Card image cap">
 					<div class="card-body">
-						<h5 class="card-title">Card title<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
+						<h5 class="card-title">re-usable wooden utensils<img class="image_eco_product" src="images/eco-logo.png" alt="Eco Product"></h5>
 						<p class="card-text">$10.00</p>
 						<button type="button" class="btn btn-purchase" onclick="point_add(1000)" data-toggle="modal" data-target="#exampleModal">Buy Now</button>
 					</div>
@@ -165,13 +168,17 @@
 			<button type="button" id="btn_tree_display" class="btn" data-toggle="modal" data-target="#point_display">Check out your tree!</button>
 		</div>
 	</div>
+	<!-- how to spend leaves -->
 	<div class="container mt-3">
 		<div class="row">
 			<div class="col-12 text-center">
 				<div>
-					<h3>How to use your ECO points</h3>
-					<p>Earn ECO points by purchasing sustainable products or by participating in our ECO Recycling program. Each ECO point you earn directly helps save our planet! In return, here are some badass savings as thanks omg pls reword.</p>
-					<p>100 points = $1.00</p>
+					<h2>how to spend <strong class="text-green-medium">leaves</strong></h2>
+					<hr>
+					<p>Earn <strong class="text-green-medium">leaves</strong> by purchasing sustainable products or by participating 
+						in our recycling program. Each <strong class="text-green-medium">leaf</strong> you earn directly helps save 
+						our planet! As thanks, we will offer exclusive discounts for shopping green.</p>
+					<p><strong class="text-green-medium">Every 1000 leaves, YOU plant one tree!</strong></p>
 				</div>
 				<div class="row d-flex align-items-center" id="points_stats_display">
 					<div class="col-4">
@@ -182,7 +189,7 @@
 					<div class="col-4">
 						<i class="fa fa-tree" aria-hidden="true"></i>
 						<div id="points_stats_trees">0</div>
-						<p>trees were were planted by you</p>
+						<p>trees planted by you</p>
 					</div>
 					<div class="col-4">
 						<i class="fa fa-usd" aria-hidden="true"></i>

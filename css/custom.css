@@ -18,6 +18,9 @@
 .text-green-medium {
 	color: #70ad47; 
 }
+hr {
+	background-color: #ff9900;
+}
 
 #tree {
 	width: 100%;
