@@ -55,10 +55,17 @@ function calc_trees_rewards() {
 }
 
 //map API by Leaflet
-var map = L.map('map').setView([44.428, -110.588], 5);
+var map = L.map('map').setView([44.428, -110.588], 8);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+var circle = L.circle([44.428, -110.588], {
+	color: '#70ad47',
+	fillColor: '#93c47d',
+	fillOpacity: 0.5,
+	radius: 70000
 }).addTo(map);
 
 const tree_marker = L.divIcon({
@@ -67,10 +74,10 @@ const tree_marker = L.divIcon({
     className: 'tree_icon'
 });
 
-L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+L.marker([44.728, -110.588],{ icon: tree_marker}).addTo(map)
 		    .bindPopup('Tree Test 1')
 
-L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+L.marker([44.228, -110.588],{ icon: tree_marker}).addTo(map)
 				.bindPopup('Tree Test 2')
 
 L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
