@@ -80,5 +80,5 @@ L.marker([44.728, -110.588],{ icon: tree_marker}).addTo(map)
 L.marker([44.228, -110.588],{ icon: tree_marker}).addTo(map)
 				.bindPopup('Tree Test 2')
 
-L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+L.marker([40.428, -120.588],{ icon: tree_marker}).addTo(map)
 		    .bindPopup('Tree Test 3')
