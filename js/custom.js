@@ -58,9 +58,3 @@ function calc_trees_rewards() {
 //map API testing stuff
 var map = L.map('map').setView([51.505, -0.09], 13);
 var marker = L.marker([51.5, -0.09]).addTo(map);
-
-function onMapClick(e) {
-    alert("You clicked the map at " + e.latlng);
-}
-
-map.on('click', onMapClick);

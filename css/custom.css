@@ -117,5 +117,6 @@
 
 /* === GOD DAMN MAP API === */
 #map {
-	height: 180px;
+	height: 500px;
+	margin: 10px;
 }
