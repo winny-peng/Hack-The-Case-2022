@@ -4,7 +4,16 @@
 #70ad47ff this is the dark green
 #ff9900 this is yellow
 #00674b - Dark Green
+#70ad47 - Medium Green
 */
+
+/* === GENERAL STYLING === */
+.bg-green-dark {
+	background-color: #00674b;
+}
+.bg-green-medium {
+	background-color: #70ad47;
+}
 
 #tree {
 	width: 100%;
@@ -71,9 +80,14 @@
 /* === AMAZON ECHO PROGRAM EXPLANATION === */
 #points_stats_display i {
 	font-size: 72px;
-	color: #00674b;
+	color: #70ad47;
 }
 #points_stats_trees {
 	font-size: 100px;
-	color: #00674b;
+	color: #70ad47;
+}
+
+#points_stats_money, #points_stats_points {
+	font-size: 50px;
+	color: #70ad47;
 }
