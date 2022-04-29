@@ -4,7 +4,7 @@
 #70ad47 Medium green
 #ff9900 Yellow
 #00674b Dark Green
-#232f3 Amazon Navy
+#252f3e Amazon Navy
 #131921 Almost Black
 */
 
@@ -35,7 +35,7 @@ p {
 	margin: 0;
 }
 .navbar-bg-colour {
-	background-color: #232f3e;
+	background-color: #252f32;
 }
 #navbar-logo {
 	width: 100px;
@@ -85,6 +85,14 @@ p {
 @keyframes fadeout {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
+}
+.btn-purchase {
+	background-color: #ff9900;
+	color: #ffffff;
+}
+.btn-purchase:hover {
+	background-color: #70ad47;
+	color: #ffffff;
 }
 
 /* === AMAZON LEAF PROGRAM EXPLANATION === */
