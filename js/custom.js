@@ -55,13 +55,22 @@ function calc_trees_rewards() {
 	return "$" + (point_count/10000).toFixed(2);
 }
 
-//map API testing stuff
-var map = L.map('map').setView([51.505, -0.09], 13);
+//map API by Leaflet
+var map = L.map('map').setView([44.428, -110.588], 5);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([51.5, -0.09]).addTo(map)
-    .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+const tree_marker = L.divIcon({
+    html: '<i class="fa fa-tree"></i>',
+    iconSize: [50, 100],
+    className: 'tree_icon'
+});
+
+L.marker([42.428, -110.548]).addTo(map)
+    .bindPopup('Our first tree!')
     .openPopup();
+
+L.marker([44.428, -110.588],{ icon:  tree_marker}).addTo(map)
+		    .bindPopup('Yellowstone Park')
