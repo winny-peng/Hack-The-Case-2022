@@ -96,3 +96,9 @@
 	width: 45px;
 	padding-left: 7px;
 }
+
+/* === HEADER CAROUSEL STYLING === */
+.carousel-caption {
+	background-color: #131921;
+	opacity: 0.6;
+}
