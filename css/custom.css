@@ -18,6 +18,9 @@
 .text-green-medium {
 	color: #70ad47; 
 }
+.text-white {
+	color: #ffffff;
+}
 hr {
 	background-color: #ff9900;
 }
@@ -163,4 +166,10 @@ p {
 
 .card-img-top {
 	height: 200px;
+}
+
+/* === FOOTER === */
+footer {
+	background-color: #252f3e;
+	padding: 15px 0;
 }
