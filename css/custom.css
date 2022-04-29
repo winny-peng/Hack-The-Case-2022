@@ -20,6 +20,15 @@
 	width: 100%;
 }
 
+/* === FONTS AND GENERAL TEXT === */
+h1, h2, h3, h4, h5 {
+	font-family: 'Fira Sans',sans-serif;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
 /* NAVIGATION */
 .navbar p, .navbar span, .navbar i {
 	color: #ffffff;
