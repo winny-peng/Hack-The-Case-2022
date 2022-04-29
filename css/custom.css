@@ -106,3 +106,7 @@
 	bottom: 0;
 	background-color: rgba(19, 25, 33, 0.7);
 }
+
+.carousel-indicators {
+	height: 15px;
+}
