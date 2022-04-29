@@ -70,8 +70,8 @@ const tree_marker = L.divIcon({
 L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
 		    .bindPopup('Tree Test 1')
 
-L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+L.marker([50.428, -100.588],{ icon: tree_marker}).addTo(map)
 				.bindPopup('Tree Test 2')
 
-L.marker([44.428, -110.588],{ icon: tree_marker}).addTo(map)
+L.marker([40.428, -120.588],{ icon: tree_marker}).addTo(map)
 		    .bindPopup('Tree Test 3')
