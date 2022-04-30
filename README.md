@@ -4,7 +4,9 @@ Unlike most businesses, Amazon saw its sales and operations soar during the pand
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+Amazon Green features a loyalty and reward program where customers can collect "leaves" for purchasing eco-friendly products. For every 1000 leaves, Amazon Green will plant a tree on behalf of the customer and to reward customers for making green choices, customers can redeem their leaves for exclusive discounts on their next purchase. To track their progress, customers have a virtual pet tree that they can view, which grows to reflect customers' eco-friendly choices and their progress towards planting another tree. Explore the tree icon in the top right corner and "purchase" products to see how the program works.
+
+For every tree planted, a tree marker will appear on the map at the bottom of the page. For this particular initiative, we chose to focus on Yellowstone National Park and all trees will only be planted in the marked area (green circle).
 
 ## Getting Started
 
@@ -12,29 +14,15 @@ Consult our presentation slides for more information: https://docs.google.com/pr
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+To view the website locally, please download the code and open index.html through your preferred web browser (we used Chrome).
 
 ## Authors
 
 * Winny Peng
 * Nayana Agrawal
 
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
 ## Acknowledgments
 
-Bootstrap
-Font Awesome
+* Bootstrap
+* Font Awesome
+* leaflet.js
