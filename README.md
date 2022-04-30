@@ -1,4 +1,4 @@
-# Hack-The-Case-2022: Amazon Prime: Eco Initiative
+# Hack-The-Case-2022: Amazon Green Initiative
 
 Unlike most businesses, Amazon saw its sales and operations soar during the pandemic because of the world's reliance on quick, efficient, and easy online shopping. Amazon recorded a profit of over 200% in 2021 with statistics pointing to even greater growth in coming years. So how can Amazon find lateral opportunities to best invest its funds for long term profit? Amazon Prime: Eco Initiative aims to reclaim packaging materials and profit from an alternative income source by collaborating with recycling centers while also contributing to the United Nations' sustainability and development goals and creating a socially and environmentally positive brand image.
 
